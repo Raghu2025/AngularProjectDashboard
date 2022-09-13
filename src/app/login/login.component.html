@@ -1,0 +1,33 @@
+<div class="wrapper bg-white">
+    <div class="h2 text-center">Name</div>
+    <div class="h4 text-muted text-center pt-2">Enter your login details</div>
+    <form class="pt-3" (ngSubmit)="login()">
+        <div class="form-group py-2">
+            <div class="input-field">
+                <span class="far fa-user p-2"></span>
+                <input type="text" placeholder="Username or Email Address" name="username" [(ngModel)]="credential.username" required class="">
+            </div>
+        </div>
+        <div class="form-group py-1 pb-2">
+            <div class="input-field">
+                <span class="fas fa-lock p-2"></span>
+                <input type="password" placeholder="Enter your Password" name="password" [(ngModel)]="credential.password" required class="">
+                <button class="btn bg-white text-muted" type="submit">
+                    <!-- <span class="far fa-eye-slash"></span> -->
+                </button>
+            </div>
+        </div>
+        <div class="d-flex align-items-start">
+            <!-- <div class="remember">
+                <label class="option text-muted"> Remember me
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+            </div> -->
+            <div class="ml-auto">
+                <a href="#" id="forgot">Forgot Password?</a>
+            </div>
+        </div>
+        <button class="col-12 btn btn-block text-center my-3 py-2" [disabled]="disabledLoginBtn()">Log in</button>
+    </form>
+</div>

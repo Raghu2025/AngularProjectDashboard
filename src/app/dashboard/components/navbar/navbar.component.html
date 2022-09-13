@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg bg-light border-bottom">
+    <div class="col-12 d-flex flex-row align-items-center justify-content-between gap-4">
+        <div class="d-flex flex-row align-items-center">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Name</span>
+            </div>
+            <div>
+                <button class="btn"  data-bs-toggle="offcanvas" (click)="canvasBtn()" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fal fa-bars text-dark fs-4"></i></button>
+            </div>
+        </div>
+        <div class="container-fluid d-flex flex-row align-items-center justify-content-end p-0">
+            <div class="d-inline"><h1 class="fs-4 me-4 fw-light">username</h1></div>
+            <div class="dropdown"> <button class="btn" data-bs-toggle="dropdown"><i class="fas fa-user-circle fs-3 text-dark fw-bold"></i></button> 
+                <ul class="dropdown-menu dropdown-menu-end p-0 pb-2">
+                    <li class="dropdown-header bg-secondary p-1 text-center text-light">Account</li>
+                    <li><a class="dropdown-item" routerLink="#"><i class="fas fa-key me-2"></i>Change Password</a></li>
+                    <li><a class="dropdown-item" routerLink="#"><i class="fal fa-sign-out-alt me-2"></i>log Out</a></li>
+                  </ul>
+                </div>
+        </div>
+    </div>
+
+</nav>

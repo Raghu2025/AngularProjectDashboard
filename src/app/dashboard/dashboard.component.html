@@ -1,0 +1,34 @@
+<ng-container>
+    <app-navbar (canvasS)="widthReducer($event)"></app-navbar>
+    <div class="d-flex">
+        <div class="canvasDiv" #colon>
+            <div class="offcanvas offcanvas-start show" data-bs-scroll="true" data-bs-backdrop="false" tabindex="0" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <ul class="d-inline list-group">
+                    <li class="list-item text-start text-light px-4 py-3"><a><i class="fas fa-tachometer-alt-slowest me-3"></i><span>DashBoard</span></a></li>
+                </ul>
+                <ul class="d-block list-group">
+                    <li class="list-item text-start text-light px-4 py-3"><a><i class="fas fa-school me-3"></i><span>School</span></a></li>
+                </ul>
+                <ul class="d-block list-group">
+                    <li class="list-item text-start text-light px-4 py-3"><a><i class="fas fa-chalkboard-teacher me-3"></i><span>Teacher</span></a></li>
+                </ul>
+                <ul class="d-block list-group">
+                    <li class="list-item text-start text-light px-4 py-3"><a><i class="far fa-users-class me-3"></i><span>Student</span></a></li>
+                </ul>
+                <ul class="d-block list-group">
+                    <li class="list-item text-start text-light px-4 py-3"><a
+                        routerLink="dashboard/modal"><i class="fal fa-mailbox me-3"></i><span>Notice</span></a></li>
+                </ul>
+              </div>
+             
+        </div>
+      
+        <div class="conatiner-fluid routerDiv d-flex flex-row justify-content-center">
+            <router-outlet></router-outlet>
+        </div>
+        
+  
+     
+    </div>
+
+</ng-container>

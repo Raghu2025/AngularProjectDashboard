@@ -1,0 +1,27 @@
+.offcanvas.offcanvas-start{
+    max-width:200px;
+    position: sticky;
+    height:95vh;
+    background-color:rgb(60,75,100);
+}
+.headinCanvas{
+    
+background-color:rgb(70,84,108);
+}
+li:hover{
+    background-color:rgb(70,84,108);
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+.canvasDiv{
+    width:200px;
+    transition: 0.4s;
+}
+.routerDiv{
+    min-width: 60vw;
+    padding:1rem;
+}
